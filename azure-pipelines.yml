@@ -25,13 +25,12 @@ steps:
   inputs:
     azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az group create --name bhai-rg2 --location westus --subscription 8c6de12e-4b49-41c0-8eff-35ac89686cf4'
+    inlineScript: 'az group create --name bhai-rg3 --location westus --subscription 8c6de12e-4b49-41c0-8eff-35ac89686cf4'
     addSpnToEnvironment: true
 
 - task: AzureCLI@1
   inputs:
     azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
     scriptLocation: 'scriptPath'
-    scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
+    scriptPath: '/home/vsts/work/1/s/Bapubhai/Test-Azure-PL-1/az-sub.sh'
     addSpnToEnvironment: true
-
