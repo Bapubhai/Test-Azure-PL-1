@@ -35,7 +35,3 @@ steps:
      scriptLocation: 'scriptPath'
      scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
      addSpnToEnvironment: true
-
-
-
-
