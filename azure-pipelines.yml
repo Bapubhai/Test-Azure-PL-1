@@ -22,14 +22,14 @@ steps:
    displayName: 'azure-cli'
 
 
-- task: AzureCLI@1 
+- task: create-rs@1
   inputs:
     azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group create --name bhai-rg2 --location westus --subscription 8c6de12e-4b49-41c0-8eff-35ac89686cf4'
     addSpnToEnvironment: true
 
-- task: azscript1
+- task: delete-rs@2
   inputs:
      azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
      scriptLocation: 'scriptPath'
