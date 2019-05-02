@@ -21,11 +21,8 @@ steps:
 -  bash: sudo bash install-az-cli.sh
    displayName: 'azure-cli'
 
--  task: AzureCLI@1
-   inputs:
-    azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
+- task: AzureCLI@1
+  inputs:
     scriptLocation: 'scriptPath'
     scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
    
-
-
