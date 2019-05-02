@@ -18,8 +18,8 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
--  bash: sudo bash install-az-cli.sh
-   displayName: 'azure-cli'
+#-  bash: sudo bash install-az-cli.sh
+#   displayName: 'azure-cli'
 
 - task: AzureCLI@1
   inputs:
@@ -32,6 +32,6 @@ steps:
   inputs:
     azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
     scriptLocation: 'scriptPath'
-    scriptPath: './az-sub.sh'
+    scriptPath: '/az-sub.sh'
     addSpnToEnvironment: true
     workingDirectory: '/home/vsts/work/1/s/Bapubhai/Test-Azure-PL-1/'
