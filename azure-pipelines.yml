@@ -3,7 +3,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+batch: boolean # batch changes if true, start a new build for every push if false
+  branches:
+    include: [ master ] # branch names which will trigger a build
+    exclude: [ * ]
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -17,5 +20,5 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
--  bash: ./install-az-cli.sh
+-  bash: sudo bash install-az-cli.sh
    displayName: 'azure-cli'  
