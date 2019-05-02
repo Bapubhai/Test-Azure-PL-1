@@ -32,6 +32,6 @@ steps:
   inputs:
     azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
     scriptLocation: 'scriptPath'
-    scriptPath: '/Bapubhai/Test-Azure-PL-1/az-sub.sh'
+    scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
     addSpnToEnvironment: true
     workingDirectory: 'Bapubhai/Test-Azure-PL-1/'
