@@ -24,5 +24,6 @@ steps:
 - task: AzureCLI@1
   inputs:
     scriptLocation: 'inlineScript'
-    scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
+    inlineScript: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
     workingDirectory: 'Bapubhai/Test-Azure-PL-1'
+
