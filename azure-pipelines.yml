@@ -21,12 +21,6 @@ steps:
 -  bash: sudo bash install-az-cli.sh
    displayName: 'azure-cli'
 
-- task: AzureCLI@1
-  inputs:
-    scriptLocation: 'inlineScript'
-    inlineScript: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
-    workingDirectory: 'Bapubhai/Test-Azure-PL-1'
-
 
 - task: AzureCLI@2
   inputs:
