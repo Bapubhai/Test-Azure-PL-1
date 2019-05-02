@@ -8,14 +8,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-- task: AzureCLI@1
-  inputs:
-    azureSubscription: 'Free Trial (8c6de12e-4b49-41c0-8eff-35ac89686cf4)'
-    scriptLocation: 'scriptPath'
-    scriptPath: 'Bapubhai/Test-Azure-PL-1/az-cli/'
-    addSpnToEnvironment: true
-    useGlobalConfig: true
-
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -24,3 +16,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  
+ - script: ./install-az-cli.sh
+ displayName: 'azure-cli' 
