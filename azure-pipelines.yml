@@ -25,4 +25,4 @@ steps:
   inputs:
     scriptLocation: 'scriptPath'
     scriptPath: 'Bapubhai/Test-Azure-PL-1/az-sub.sh'
-   
+    workingDirectory: 'Bapubhai/Test-Azure-PL-1'
