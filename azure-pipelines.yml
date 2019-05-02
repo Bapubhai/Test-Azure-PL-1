@@ -18,4 +18,4 @@ steps:
   displayName: 'Run a multi-line script'
   
 -  bash: ./install-az-cli.sh
-    displayName: azure-cli  
+   displayName: 'azure-cli'  
